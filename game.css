@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+#open-game {
+  background-image: url("./images/ZOMBIE INVASION SECTION 2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  text-align: center;
+}
+
+#start-button { 
+  position: relative;
+  text-align: center;
+}
+
+a.btn {border-radius: .25rem; border: 1px solid transparent; padding: .5rem 1rem; color: rgb(100, 1, 1); background-color: darkorange}
+a.btn:hover { border-radius: .25rem; }
+
+#palacio-cristal { 
+  position: relative;
+  height: 500px;
+  width: 700px;
+}
+
+.wrapper { 
+  width: 400px;
+  margin: 0 auto;
+}
+
+#main-screen {
+  background-image: url("./images/mapa-curitiba.png");
+  background-repeat: no-repeat;
+  height: 700px;
+  text-align: center;
+}
+
+
+
+.player-name {
+  display: inline-block;
+}
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  background-image: url("./images/GameOver-pop.png")
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

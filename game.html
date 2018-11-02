@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" media="screen" href="game.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <title>Zombies in Curitiba</title>
+</head>
+
+<body>
+
+  <section>
+
+    <div id="side-bar">
+
+
+        <p>Place your Name here:</p>
+       <input id="player-name" type="text" name="fullname"><br>
+        <input id ="send-name" type="submit" value=" Send ">
+  
+
+      <div id="movement-selector">
+        <input class="btn-group btn-group-lg" type="button" value="Hide" onclick="hide()">
+        <input class="btn-group btn-group-lg" type="button" value="Evade" onclick="evade()">
+        <input class="btn-group btn-group-lg" type="button" value="Fight" onclick="fight()">
+        <input class="btn-group btn-group-lg" type="button" value="Bomb" onclick="bomb()">
+      </div>
+    </div>
+
+    <div id="main-screen">
+        <div id="game-status">
+            <p>Rounds Counter</p> 
+            <p id="rounds-counter" onclick="changeText()" value="Rounds number"></p>
+          </div>
+    </div>
+
+
+
+    <div class="popup" onclick="myPop()">
+      <span class="popuptext" id="myPopup">Game Over</span>
+    </div>
+
+  
+
+  </section>
+  <script type="text/javascript" src="./neighborhoods.js"></script>
+  <script type="text/javascript" src="./library.js"></script>
+  <script type="text/javascript" src="./moves.js"></script>
+
+</body>
+
+</html>
